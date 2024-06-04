@@ -31,5 +31,3 @@ else {
 // console.log(player)
 // console.log(getRandomInt())
 // console.log(computer)
-
-
