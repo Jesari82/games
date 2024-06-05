@@ -20,7 +20,6 @@ function getRandomInt() {
     }
   }
 
-// getRandomInt ist mir zu sperrig -> theoretisch nciht notwenig, nur hübscher
 const computer = getRandomInt();
 
 // If-Else Abfrage für das Ergebnis. Abfrage von True-False Werten. Hierbei müssen bei && beide Werte und bei || ein Wert true sein um als relevanter Wert erkannt zu werden.
