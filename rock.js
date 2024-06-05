@@ -1,4 +1,4 @@
-// Zug des Spielers - Prozess hat einen Index von 3 (0, 1, 2). [0] greift auf das das eingegebene Element als String zu.
+// Zug des Spielers - Prozess schneidet die ersten beiden Elemente ab (brauchen wir nicht). [0] greift auf das das eingegebene Element als String zu.
 let player = process.argv.slice(2)[0]; 
 
 // Zufälliger Zug des Computer -> Die 3 möglichen Nummern werden über einen Switch in Namen (Strings) umgewandelt. der Defaultwertist für die Vollständigkeit -> Monk und so.
