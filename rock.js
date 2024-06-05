@@ -19,8 +19,8 @@ const computer = getRandomInt();
 
 // If-Else Abfrage: Ergebnis. Abfrage von True-False Werten. Hierbei müssen für && beide Werte und für || ein Wert "true" sein um als "Sieg" interpretiert zu werden.
 if (player === computer) { 
-    console.log(`Das Spiel endet unentschieden! Spieler wählte "${player}" und der Computer hat "${computer}".`)}
+    console.log(`Es ist ein Unentschieden! Du hast "${player}" gewählt und der Computer hat auch "${computer}" gewählt. Große Denker, kleine Unterschiede!`);}
 else if (player === "Stein" && computer === "Schere" || player === "Schere" && computer === "Papier" || player === "Papier" && computer === "Stein") {
-    console.log(`Der Spieler gewinnt! Spieler wählte "${player}" und der Computer hat "${computer}".`)}
+    console.log(`Gewonnen! Dein "${player}" hat des Computers "${computer}" besiegt. Zeit, eine Siegesrede zu halten!`);}
 else {
-    console.log(`Der Computer gewinnt! Der Computer hat "${computer}" und Spieler wählte "${player}".`)}
+    console.log(`Der Computer gewinnt! Sein/e "${computer}" hat dein/e "${player}" überlistet. Aber keine Sorge, dein Comeback ist schon in Arbeit!`);}
