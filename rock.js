@@ -1,22 +1,20 @@
-console.log('Rock Paper Scissors')
+console.log()
+console.log('Schere-Stein-Papier')
+console.log()
 
-//Noch offen zu klären????
-// console.log(process.argv);
-// const player = ['rock', 'paper', 'scissors'];
-
-// Spieler-Zug
-let player = "Scissors";
+//Zug des Spielers - Prozess hat einen Index von 3 (0, 1, 2). [0] greift auf das das eingegebene Element als String zu.
+let player = process.argv.slice(2)[0];
 
 // Computer Zufallszug -> Die 3 möglichen numbers werden über einen Switch in die Zugnahmen umgewandelt - Defaultwert für die Vollständigkeit.
 function getRandomInt() {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber){
         case 0:
-            return "Rock"
+            return "Schere"
         case 1:
-            return "Paper"
+            return "Stein"
         case 2:
-            return "Scissors"
+            return "Papier"
         default:
             return "Damn it"
     }
@@ -28,12 +26,7 @@ const computer = getRandomInt();
 // If-Else Abfrage für das Ergebnis. Abfrage von True-False Werten. Hierbei müssen bei && beide Werte und bei || ein Wert true sein um als relevanter Wert erkannt zu werden.
 if (player === computer) {
     console.log(`Das Spiel endet unentschieden! ${player} : ${computer}`)}
-else if (player === "Rock" && computer === "Scissors" || player === "Scissors" && computer === "Paper" || player === "Paper" && computer === "Rock") {
+else if (player === "Stein" && computer === "Schere" || player === "Schere" && computer === "Papier" || player === "Papier" && computer === "Stein") {
     console.log(`Der Spieler gewinnt! ${player} : ${computer}`)}
 else {
     console.log(`Der Computer gewinnt! ${computer} : ${player}`)}
-
-// Restspuren: fliegen raus, nur zum testen.
-// console.log(player)
-// console.log(getRandomInt())
-// console.log(computer)
