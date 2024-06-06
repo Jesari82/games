@@ -12,7 +12,6 @@ for (let i = 0; i < phrase.length; i++) {
     newPhrase += newWord + ' ';                                                         // Erstelle den Output als 1 Zeile mit Leerzeichen.
 }
 
-// Übersetzung in PigLatin, Bedingungen: Prüfe ob Vokale in den ersten Buchstaben enthalten sind und erstelle ein newWord und gib es zurück.
 function translate(word, firstletter, secondletter) {                                   // Funktion übersetzt auf Basis der einzelnen Wörter und der 1. & 2. Buchstaben in PigLatin
     if (vowels.indexOf(firstletter) === -1 && vowels.indexOf(secondletter) === -1) {    // Erster beiden Buchstaben enthalten keinen Vokal (indexOf = -1) 
         const newWord = word.slice(2) + firstletter + secondletter + 'ay'               // Neues Wort: Altes Wort Schnitt vor  3. Buchstabe (Bs) + 1. Bs + 2. Bs + 'ay'
